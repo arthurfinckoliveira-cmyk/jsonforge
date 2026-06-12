@@ -95,14 +95,16 @@ runtime smoke HTTP 200, constraints sem-rede confirmado por grep, code quality s
 **Comando de deploy:**
 ```bash
 # pré-flight: git instalado via winget, repo inicializado e commitado localmente
-gh repo create jsonforge --public --source=. --remote=origin --push
-npx vercel --prod --yes
+gh repo create jsonforge --public --source=. --remote=origin --push   # cria repo público + push
+npx vercel --prod --yes                                               # build estático + deploy de produção
 ```
 
-**URL final:** _(preenchida após o deploy — ver seção abaixo / topo do README)_
+**URL final:** **https://jsonforge-kappa.vercel.app** (HTTP 200, READY)
 
-- **GitHub:** _(pendente autenticação `gh auth login`)_
-- **Vercel:** _(pendente autenticação `vercel login` ou token)_
+- **GitHub:** https://github.com/arthurfinckoliveira-cmyk/jsonforge
+- **Vercel:** deploy de produção concluído (`readyState: READY`, framework Vite auto-detectado, sem env vars).
+  Nota: a URL imutável do deploy (`jsonforge-9ll...vercel.app`) fica sob Deployment Protection (401);
+  o **alias de produção** `jsonforge-kappa.vercel.app` é o endpoint público.
 
 ## Reflexão
 

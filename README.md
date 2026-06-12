@@ -3,6 +3,9 @@
 > Format, validate and explore JSON **entirely in your browser**.
 > No server. No database. Your data never leaves the page.
 
+**🔗 Live:** https://jsonforge-kappa.vercel.app
+**📦 Repo:** https://github.com/arthurfinckoliveira-cmyk/jsonforge
+
 JSONForge is a developer productivity tool built end-to-end with the **Synkra AIOX**
 multi-agent workflow (PM → Architect → UX → SM → PO → Dev → QA → DevOps).
 
